@@ -14,3 +14,20 @@ let score = 0;
 let selected_insect = {};
 
 start_btn.addEventListener("click", () => screen[0].classList.add(".up"));
+
+choose_insect_btns.forEach((button) => {
+  button.addEventListener("click", () => {
+    const img = btn.querySelector("img");
+    const src = img.getAttribute("src");
+    const alt = img.getAttribute("alt");
+    selected_insect = { src, alt };
+    screens[1].classList.add("up");
+    setTimeout(createInsect, 1000);
+    startGame();
+  });
+});
+
+function startGame() {
+  console.log("Here is where magic happens");
+  setInterval(increaseTime, 1000);
+}
