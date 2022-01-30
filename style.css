@@ -14,6 +14,14 @@ body {
   text-align: center;
 }
 
+a {
+  color: white;
+}
+
+h1 {
+  line-height: 1.4;
+}
+
 /* Play Game button */
 .btn {
   border: 0;
@@ -32,7 +40,9 @@ body {
   outline: 0;
 }
 
-/* .screen {
+/* Screen */
+
+.screen {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -44,7 +54,7 @@ body {
 
 .screen.up {
   margin-top: -100vh;
-} */
+}
 
 .insects-list {
   display: flex;
